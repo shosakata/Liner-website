@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="ご希望に沿った教師を紹介致します。">
+    <meta name="keywords" content="online, tutor, University of Tokyo, ライナー, 家庭教師ライナー, LINER">
+    <title>教師紹介</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel='stylesheet' href='lity-2.3.1/dist/lity.css' />
+    <link rel="shortcut icon" href="images/favicon.jpg">
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="header">
+    <div class="inner clearfix">
+      <a href="index.html"><img src="images/logo.jpg" id="logo-photo"></a>
+      <a id="contact_way" style="text-align:center;margin-top:-10px;"><i class="fa fa-envelope" style="font-size: 24px;color:#C0C0C0;"></i><span  style="font-size: 10px;display:block;line-height: 0px;color:#C0C0C0;">お問い合わせ</span></a>
+      <div id="Hamburger_icon" style="text-align:center;">
+        <div id="nav_toggle">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <span  style="font-size: 10px;color: #C0C0C0;">メニュー</span>
+      </div>
+      <nav id="menu" class="pc-menu phone-menu">
+        <ul>
+          <li class="active"><a href="index.html" title="TOP">TOP</a></li>
+          <li><a href="tutor-search.html" title="教師紹介">教師紹介</a></li>
+          <li><a href="tuition-fee.html" title="料金">料金</a></li>
+          <li><a href="entry-process.html" title="入会の流れ">入会の流れ</a></li>
+          <li><a href="contact.html" title="問い合わせ">問い合わせ</a></li>
+
+          <li><a href="register-tutor.html" title="教師登録">教師登録</a></li>
+          <div class="nav-underline nav_tutor-search"></div>
+        </ul>
+      </nav>
+      <nav class="global-nav">
+        <h2 class="text-white">無料体験授業・資料請求のご連絡</h2>
+          <ul class="nav-list">
+            <li class="nav-item" width="50%">
+              <button onclick="location.href='contact.html'" class="btn" style="color:#000;background-color:#fff;">
+                <i class="fa fa-envelope"></i>メールで問い合わせ
+              </button>
+            </li>
+            <li class="nav-item" width="50%">
+              <button onclick="location.href='tel:0364258699'" class="btn" style="color:#000;background-color:#fff;">
+                <i class="fa fa-phone"></i>&nbsp;電話で問い合わせ&nbsp;
+              </button>
+            </li>
+          </ul>
+      </nav>
+    </div>
+  </div>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="page-caption">
+                        <h1 class="page-title">教師紹介</h1>
+                        <div class="page-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li><a href="index.html" class="to-top">TOP</a></li>
+                                <li>教師紹介</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row mainbar">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="post-block">
+                        <div class="row ">
+                            <!-- post block -->
+                              <section class="block">
+                      					<div class="titleWrap">
+                      						<div class="search">
+                      							<form id="js-search">
+                      								<h2 class="hd text-left clearfix">教師紹介<button type="reset" class="btn btn-default" value="全解除"　id="reset-btn" style="float:right;">選択解除</button></h2>
+                                      <p>教師は全員東大生・東大卒となります。</p>
+                                      <div class="semiblock">
+                      									<h4 class="hdSearch grade">対象学年（1つのみ選択可）</h4>
+                      									<div class="checkboxTab">
+                      										<ul id="grade">
+                      											<li><input type="radio" name="grade" value="小学生" id="elem"><label for="elem">小学生</label></li>
+                      											<li><input type="radio" name="grade" value="中学生" id="junior"><label for="junior">中学生</label></li>
+                      											<li><input type="radio" name="grade" value="中学生（中高一貫）" id="consistency"><label for="consistency">中学生（中高一貫）</label></li>
+                      											<li><input type="radio" name="grade" value="高校生" id="high"><label for="high">高校生</label></li>
+                      											<li><input type="radio" name="grade" value="既卒生" id="ob"><label for="ob">既卒生<br><font size="2">（大学浪人２年まで）</font></label></li>
+                      										</ul>
+                      									</div>
+                      								</div>
+                                      <div class="semiblock">
+                      									<h4 class="hdSearch bunri">文理（複数選択可）</h4>
+                      									<div class="checkboxTab">
+                      										<ul id="bunri">
+                                            <li><input type="checkbox" name="bunri" value="1" id="bunkei"><label for="bunkei">文系</label></li>
+                      											<li><input type="checkbox" name="bunri" value="2" id="rikei"><label for="rikei">理系</label></li>
+                      										</ul>
+                      									</div>
+                      								</div>
+                      								<div class="semiblock">
+                      									<h4 class="hdSearch subject">指導科目（複数選択可）</h4>
+                      									<h5 class="hdMini">・小学生</h5>
+                                          <div class="checkboxTab" style="padding-top:10px;padding-bottom:10px;">
+                      										<ul id="elem-subject">
+                      											<li><input type="checkbox" name="subject" value="01" id="elem-arithmetic"><label for="elem-arithmetic">算数</label></li>
+                      											<li><input type="checkbox" name="subject" value="02" id="elem-japanese"><label for="elem-japanese">国語</label></li>
+                      											<li><input type="checkbox" name="subject" value="03" id="elem-science"><label for="elem-science">理科</label></li>
+                      											<li><input type="checkbox" name="subject" value="04" id="elem-sociology"><label for="elem-sociology">社会</label></li>
+                      											<li><input type="checkbox" name="subject" value="05" id="elem-english"><label for="elem-english">英語</label></li>
+                      										</ul>
+                                          </div>
+                      									<h5 class="hdMini">・中学生</h5>
+                                          <div class="checkboxTab" style="padding-top:10px;padding-bottom:10px;">
+                      										<ul id="junior-subject">
+
+                      											<li><input type="checkbox" name="subject" value="07" id="junior-math"><label for="junior-math">数学</label></li>
+                      											<li><input type="checkbox" name="subject" value="08" id="junior-japanese"><label for="junior-japanese">国語</label></li>
+                      											<li><input type="checkbox" name="subject" value="09" id="junior-english"><label for="junior-english">英語</label></li>
+                      											<li><input type="checkbox" name="subject" value="10" id="junior-science"><label for="junior-science">理科</label></li>
+                      											<li><input type="checkbox" name="subject" value="11" id="junior-sociology"><label for="junior-sociology">社会</label></li>
+                      										</ul>
+                                          </div>
+                      									<h5 class="hdMini">・高校生・既卒生</h5>
+                                          <div class="checkboxTab" style="padding-top:10px;padding-bottom:10px;">
+                      										<ul id="high-subject">
+
+                      											<li><input type="checkbox" name="subject" value="13" id="high-math"><label for="high-math">数学</label></li>
+                      											<li><input type="checkbox" name="subject" value="14" id="high-japanese"><label for="high-japanese">国語</label></li>
+                      											<li><input type="checkbox" name="subject" value="15" id="high-english"><label for="high-english">英語</label></li>
+                      											<li><input type="checkbox" name="subject" value="16" id="high-physics"><label for="high-physics">物理</label></li>
+                      											<li><input type="checkbox" name="subject" value="17" id="high-chemistry"><label for="high-chemistry">化学</label></li>
+                      											<li><input type="checkbox" name="subject" value="18" id="high-biology"><label for="high-biology">生物</label></li>
+                      											<li><input type="checkbox" name="subject" value="19" id="high-geology"><label for="high-geology">地学</label></li>
+                                            <li><input type="checkbox" name="subject" value="20" id="japanese-history"><label for="japanese-history">日本史</label></li>
+                      											<li><input type="checkbox" name="subject" value="21" id="world-history"><label for="world-history">世界史</label></li>
+                      											<li><input type="checkbox" name="subject" value="22" id="high-geography"><label for="high-geography">地理</label></li>
+                      											<li><input type="checkbox" name="subject" value="23" id="current-sociery"><label for="current-sociery">現代社会</label></li>
+                      											<li><input type="checkbox" name="subject" value="24" id="high-sociery"><label for="high-sociery">倫理政経</label></li>
+                      											<li><input type="checkbox" name="subject" value="25" id="essay"><label for="essay">小論文</label></li>
+
+                      										</ul>
+                                          </div>
+                      								</div>
+
+                      								<div class="semiblock" style="display:none">
+                      									<h4 class="hdSearch area">教師の出身地</h4>
+                      									<select id="hometown" name="from">
+                      									<option value="">未選択</option>
+                      									<option value="48">海外</option>
+                      									<option value="01">北海道</option>
+                      									<option value="02">青森県</option>
+                      									<option value="03">岩手県</option>
+                      									<option value="04">宮城県</option>
+                      									<option value="05">秋田県</option>
+                      									<option value="06">山形県</option>
+                      									<option value="07">福島県</option>
+                      									<option value="08">群馬県</option>
+                      									<option value="09">栃木県</option>
+                      									<option value="10">茨城県</option>
+                      									<option value="11">埼玉県</option>
+                      									<option value="12">千葉県</option>
+                      									<option value="13">東京都</option>
+                      									<option value="14">神奈川県</option>
+                      									<option value="15">新潟県</option>
+                      									<option value="16">富山県</option>
+                      									<option value="17">石川県</option>
+                      									<option value="18">福井県</option>
+                      									<option value="19">山梨県</option>
+                      									<option value="20">長野県</option>
+                      									<option value="21">岐阜県</option>
+                      									<option value="22">静岡県</option>
+                      									<option value="23">愛知県</option>
+                      									<option value="24">三重県</option>
+                      									<option value="25">滋賀県</option>
+                      									<option value="26">京都府</option>
+                      									<option value="27">大阪府</option>
+                      									<option value="28">兵庫県</option>
+                      									<option value="29">奈良県</option>
+                      									<option value="30">和歌山県</option>
+                      									<option value="31">鳥取県</option>
+                      									<option value="32">島根県</option>
+                      									<option value="33">岡山県</option>
+                      									<option value="34">広島県</option>
+                      									<option value="35">山口県</option>
+                      									<option value="36">徳島県</option>
+                      									<option value="37">香川県</option>
+                      									<option value="38">愛媛県</option>
+                      									<option value="39">高知県</option>
+                      									<option value="40">福岡県</option>
+                      									<option value="41">佐賀県</option>
+                      									<option value="42">長崎県</option>
+                      									<option value="43">熊本県</option>
+                      									<option value="44">大分県</option>
+                      									<option value="45">宮崎県</option>
+                      									<option value="46">鹿児島県</option>
+                      									<option value="47">沖縄県</option>
+                      									</select>
+                      								</div>
+                      								<div class="semiblock">
+                      									<h4 class="hdSearch sex">教師の性別（複数選択可）</h4>
+                      									<div class="checkboxTab">
+                      										<ul id="sex">
+                      											<li><input type="checkbox" name="gender" value="1" id="male"><label for="male">男性</label></li>
+                      											<li><input type="checkbox" name="gender" value="2" id="female"><label for="female">女性</label></li>
+                      										</ul>
+                      									</div>
+                      								</div>
+                                      <div class="semiblock" style="display:none">
+                                        <h4 class="hdSearch result">指導実績（1つのみ選択可）</h4>
+                                        <div class="checkboxTab">
+                                          <ul id="result">
+                                            <li><input type="radio" name="deviation" value="5" id="5UP"><label for="5UP">偏差値5以上UP</label></li>
+                                            <li><input type="radio" name="deviation" value="10" id="10UP"><label for="10UP">偏差値10以上UP</label></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <button type="button" class="submit btn btn-default btn-lg" name="検索" id="searchBtn">検索</button>
+                      							</form>
+                      						</div>
+                      					</div>
+                      				</section>
+                        </div>
+                        <!-- /.post block -->
+                    </div>
+                </div>
+
+                <!--検索結果-->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="post-block　row block teacherList" id="js-teacher-list"></div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="st-pagination">
+                        <ul id="js-page-navi" class="pagination">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row sidebar">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="post-block sidebox">
+                    <div id="fee-list">
+                        <font color="#555" size="2">ご質問・ご相談など</font>
+                        <h3>各種お問い合わせ<br>無料体験授業のお申し込み</h3>
+                        <div>
+                          <div class="meta-cat"><img src="images/phone.jpg" height=25px></div>
+                          <a href="tel:0364258699" class="meta-cat icon-char">03-6425-8699</a>
+                        </div>
+                        <font color="#555" size="2">平日：10:00-20:00/土日祝：10:00-17:00</font>
+                        <div>
+                          <div class="meta-cat"><img src="images/mail.jpg" style="max-width:24px;"></div>
+                          <button onclick="location.href='./contact.html'" type="button" class="meta-cat btn btn-default" name="検索">お問い合わせフォーム</button>
+                        </div>
+                        <font color="#555" size="2">LINE@からもお気軽にご相談ください。</font>
+                        <div>
+                          <div class="meta-cat"><img src="images/line-icon.png" style="max-width:24px;"></div>
+                          <div class="meta-cat"><a href="https://line.me/R/ti/p/%40jgt6140m"><img src="images/line@-icon.jpg" style="max-width:165px; border-radius:3px;"></a></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <!-- footer-->
+        <div class="container">
+            <div class="footer-block">
+                <!-- footer block -->
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget footer-social">
+                            <!-- <h2 class="widget-title">Salon Address</h2> -->
+                            <ul class="listnone">
+                                <li><a href="tel:0364258699"><i class="fa fa-phone"></i> 03-6425-8699</a></li>
+                                <li><a href="contact.html"><i class="fas fa-envelope pdt3"></i>お問い合わせフォーム</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget footer-social">
+                            <ul class="listnone">
+                                <li><a href="https://www.facebook.com/TUTOR.LINER"> <i class="fab fa-facebook-f"></i> Facebook </a></li>
+                                <li><a href="https://line.me/R/ti/p/%40jgt6140m"> <i class="fab fa-line"></i> LINE@ </a></li>
+                                <li><a href="https://twitter.com/tutor_liner"><i class="fab fa-twitter"></i> Twitter</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-widget widget-menu footer-social">
+                            <ul class="listnone">
+                                <li class="active"><a href="index.html" title="TOP"><i class="fas fa-home"></i> TOP</a></li>
+                                <li><a href="tutor-search.html" title="教師紹介"><i class="fas fa-search"></i>教師紹介</a></li>
+                                <li><a href="tuition-fee.html" title="料金"><i class="fas fa-yen-sign"></i>料金</a></li>
+                                <li><a href="entry-process.html" title="入会の流れ"><i class="far fa-file"></i>ご入会の流れ</a></li>
+                                <li><a href="contact.html" title="問い合わせ"><i class="fas fa-envelope pdt3"></i>お問い合わせ</a></li>
+
+                                <li><a href="register-tutor.html" title="教師登録"><i class="far fa-address-card"></i>教師登録</a></li>
+                                <li><a href="profile.html" title="会社概要"><i class="far fa-building"></i>会社概要</a></li>
+                                <li><a href="./area/japan.html" title="地域情報"><i class="far fa-map"></i>地域情報</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="text-align:center;">
+                      <a href="index.html" class="inline-block"><img src="images/logo.jpg" height="56px"></a>
+                    </div>
+                </div>
+                <div class="tiny-footer">
+                    <!-- tiny footer block -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="copyright-content">
+                                <p class="inline-block">COPYRIGHT 2019 BY オンライン家庭教師LINER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.tiny footer block -->
+            </div>
+            <!-- /.footer block -->
+        </div>
+    </div>
+    <!-- /.footer-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/sticky-header.js"></script>
+    <script src="js/tutor-search-client.js"></script>
+    <script src="js/nav.js"></script>
+    <script src='lity-2.3.1/dist/lity.js'></script>     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <script src="https://r.moshimo.com/af/r/maftag.js"></script>
+</body>
+
+</html>

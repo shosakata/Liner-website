@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/*
+Theme Name: alpha
+Version: 1.0
+
+*/
+
+
+@media only screen and (min-width: 993px) {
+  .list-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .list-area {
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin: 0 4%;
+    padding-left: 0;
+    box-shadow: 1px 1.7px 4px 0 rgba(0, 0, 0, 0.1); } }
+
+.list-area__item {
+  position: relative; }
+  @media only screen and (max-width: 992px) {
+    .list-area__item {
+      border-top: 1px solid #e1e1e1;
+      padding:0;}
+      .list-area__item:first-of-type {
+        border-top: none; }
+      .list-area__item:after {
+        content: "";
+        background-color: #c0c0c0;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 1; } }
+  @media only screen and (min-width: 993px) {
+    .list-area__item {
+      width: 24.3%;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fafcfa;
+      box-shadow: 0.5px 0.9px 2px 0 rgba(0, 0, 0, 0.1);
+      margin-top: 10px; }
+      .list-area__item:nth-of-type(-n+4) {
+        margin-top: 0; } }
+
+.list-area__main {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1.9px;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 992px) {
+    .list-area__main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      height: 40px; }
+      .list-area__main:before, .list-area__main:after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 12px;
+        z-index: 2; }
+      .list-area__main:after {
+        transition: transform .3s;
+        transform: rotate(90deg); }
+      .list-area__main.is-active:after {
+        transform: rotate(0); } }
+  @media only screen and (min-width: 993px) {
+    .list-area__main {
+      font-size: 2rem;
+      letter-spacing: 2.4px;
+      padding: 10px 0 5px; } }
+
+.list-area__sub {
+  background-color: #fcfcfc;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+  @media only screen and (min-width: 993px) {
+    .list-area__sub {
+      justify-content: space-between;
+      padding: 0 10px 10px; } }
+  .list-area__sub__item {
+    box-sizing: border-box;
+    text-align: center; }
+    .list-area__sub__item a {
+      position: relative;
+      padding: 10px 4px;
+      display: block;
+      color: #2379bc;
+      font-size:1.2rem;
+      text-decoration: underline; }
+      .list-area__sub__item a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 2px;
+        opacity: 0;
+        /* background-color: #008250; */
+        transition: opacity .3s;
+      }
+
+      .hokkaido a:before{
+        background-color: #ca93ea;
+      }
+      .tohoku a:before{
+          background-color: #a7a5ea;
+      }
+      .kanto a:before{
+        background-color: #84b0f6;
+      }
+      .hokuriku_koshinetsu a:before{
+        background-color: #52d49c;
+      }
+      .tokai a:before{
+        background-color: #77e18e;
+      }
+      .kansai a:before{
+        background-color: #f2db7b;
+      }
+      .chugoku a:before{
+        background-color: #f9ca6c;
+      }
+      .shikoku a:before{
+        background-color: #fbad8b;
+      }
+      .kyushu a:before{
+        background-color: #f7a6a6;
+      }
+      .okinawa a:before{
+        background-color: #ea89c4;
+      }
+
+      @media only screen and (min-width: 993px) {
+        .list-area__sub__item a:hover:before {
+          opacity: 1; } }
+      .list-area__sub__item a.is-touched:before {
+        opacity: 1; }
+    @media only screen and (max-width: 992px) {
+      .list-area__sub__item {
+        width: 20%;
+        border-top: 1px solid #e1e1e1;
+        border-right: 1px solid #e1e1e1; }
+        .list-area__sub__item:nth-of-type(-n+5) {
+          border-top: none; }
+        .list-area__sub__item:nth-of-type(5n) {
+          border-right: none; } }
+    @media only screen and (min-width: 993px) {
+      .list-area__sub__item {
+        width: 32.4%;
+        border-radius: 2px;
+        box-shadow: 0.5px 0.9px 0 0 rgba(0, 0, 0, 0.15);
+        margin-top: 4px; }
+        .list-area__sub__item a {
+          background-color: #ffffff;
+          color: #3c3c3c;
+          text-decoration: none;
+          position: relative; }
+          .list-area__sub__item a:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -5px;
+            right: -4px;
+            border: 7px solid transparent;
+            /* border-left: 7px solid #008250; */
+            transform: rotate(45deg); }
+            .hokkaido a:after{
+              border-left: 7px solid #ca93ea;
+            }
+            .tohoku a:after{
+              border-left: 7px solid #a7a5ea;
+            }
+            .kanto a:after{
+              border-left: 7px solid #84b0f6;
+            }
+            .hokuriku_koshinetsu a:after{
+              border-left: 7px solid #52d49c;
+            }
+            .tokai a:after{
+              border-left: 7px solid #77e18e;
+            }
+            .kansai a:after{
+              border-left: 7px solid #f2db7b;
+            }
+            .chugoku a:after{
+              border-left: 7px solid #f9ca6c;
+            }
+            .shikoku a:after{
+              border-left: 7px solid #fbad8b;
+            }
+            .kyushu a:after{
+              border-left: 7px solid #f7a6a6;
+            }
+            .okinawa a:after{
+              border-left: 7px solid #ea89c4;
+            }
+
+
+          }
+      @media only screen and (min-width: 993px) and (max-width: 992px) {
+        .list-area__sub__item a:after {
+          border-width: 10px;
+          bottom: -6px;
+          right: -6px; } }
+    @media only screen and (min-width: 993px) {
+          .list-area__sub__item a:after {
+            border-width: 4px;
+            right: -1px;
+            bottom: -1px; }
+          .list-area__sub__item a:hover {
+            opacity: 1;
+            /* background-color: #ecf4ec;  */
+            }
+          .hokkaido a:hover{
+              background-color: #f1d9ff;
+            }
+          .tohoku a:hover{
+              background-color: #e7e6ff;
+            }
+          .kanto a:hover{
+            background-color: #d6e6ff;
+            }
+          .hokuriku_koshinetsu a:hover{
+            background-color: #abebcf;
+            }
+          .tokai a:hover{
+            background-color: #bcf7c9;
+            }
+          .kansai a:hover{
+            background-color: #f5eed0;
+            }
+          .chugoku a:hover{
+            background-color: #f5eabc;
+            }
+          .shikoku a:hover{
+            background-color: #ffe3d6;
+            }
+          .kyushu a:hover{
+            background-color: #ffdede;
+            }
+          .okinawa a:hover{
+            background-color: #fcd9ef;
+            }
+
+          }
+  @media only screen and (max-width: 992px) {
+    .list-area__sub__wrapper {
+      display: none;
+      border-top: 1px solid #e1e1e1; } }
+
+.list-area--blue .list-area__item:after {
+  background-color: #2379bc; }
+
+@media only screen and (max-width : 992px) {
+  #map{display:none;}
+}
